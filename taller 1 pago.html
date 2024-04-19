@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGO SALARIO</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- LINK CSS -->
+    <link rel="stylesheet"  href="./css/estilos_tabla.css">
+</head>
+<body>
+    <CENTER>
+        <img src="./IMG/js.jpeg"  alt="" width="250" height="150">
+        <h1>EMPRESA LA VACANA </h1>
+        <H2> PAGO DE SALARIO EMPREADO </H2>
+        <H3>VALOR DEL DIA =$50.000 - BONO 50.000</H3>
+        <script>
+            let dias,vdia, subtotal,bonificacion,total;
+            dias=parseInt(prompt("ingrese dias trabajados"));
+            vdia=parseInt(prompt("ingrese valor dia"));
+            subtotal=dias*vdia;// valor dias a pagar
+            //condicional
+            if(dias>15){
+                bonificacion=50000;
+                total=subtotal+bonificacion;//neto a pagar
+                document.write("<table><caption>RELACION PAGO</caption><tr><th>DIAS TRABAJADOS</th><td>",dias,"</td></tr><tr><th>VALOR DIA</th><td>",vdia,"</td></tr><tr><th>BONIFICACION</th><td>",bonificacion,"</td></tr><tr><th>VALOR A PAGAR</th><td>",total,"</td></tr></table>");
+
+            }else{
+                bonificacion=0;
+                total=subtotal+bonificacion;//neto a pagar
+                document.write("<table><caption>RELACION PAGO</caption><tr><th>DIAS TRABAJADOS</th><td>",dias,"</td></tr><tr><th>VALOR DIA</th><td>",vdia,"</td></tr><tr><th>BONIFICACION</th><td>",bonificacion,"</td></tr><tr><th>VALOR A PAGAR</th><td>",total,"</td></tr></table>");
+
+            }
+</script>
+    </CENTER>
+    
+</body>
+</html>

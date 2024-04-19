@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cajero electronico </title>
+    <!--link de sitio sweetalert mensajes mas elegantes  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        h1,h2,h3{
+            font-size: 26px;
+            color: blueviolet;
+            text-align: 26px
+            }
+
+        </style>
+</head>
+<body>
+    <center>
+        <img src="./IMG/WhatsApp Image 2024-04-19 at 10.13.27 AM (2).jpeg" alt="" width="150" height="150">
+        <h1>BANCO NUBANK</h1>
+        <h2>RETIRO DINERO CAJERO ELECTRONICO</h2>
+        <h3>BIENVENIDO-A- SR USUARIO-A-</h3>
+        <br><br>
+        <script>
+            let cuenta=parseInt(prompt("INGRESE NUMERO DE CUENTA DE AHORROS"));
+            let saldo=parseInt(prompt("INGRESE saldo a consignar"));
+            let valor=parseInt(prompt("INGRESE valor dinero $$ a retirar"));
+            //condicional
+            if(valor>saldo){
+                swal("estimado usuario","**** FONDOS INSUFICIENTES ****","error");
+            }else{
+                sw=1;//activado
+                var saldof;
+                saldof=saldo-valor;// actualiza saldo cuenta
+                swal("estimado usuario","RETIRE SU DINERO!!","succes");
+
+            }
+            //condicional
+            if(sw==0){
+                document.write("RECUERDE SU SALDO DISPONIBLE ES....$"+saldo);
+            }else{
+                document.write("NO OLVIDE RETIRAR SU TARGETA, SU SALDO ACTUAL ES .....$"+saldo);
+            }
+            
+
+        </script>
+        
+
+    </center>
+
+    
+        
+    
+</body>
+</html>
